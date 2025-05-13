@@ -9,7 +9,7 @@ const Relevance = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=relevance')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person/getFieldData?field=relevance')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
