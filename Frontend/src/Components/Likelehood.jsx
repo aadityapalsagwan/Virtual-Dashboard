@@ -9,7 +9,7 @@ const Likelihood = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=likelihood')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person/getFieldData?field=likelihood')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
