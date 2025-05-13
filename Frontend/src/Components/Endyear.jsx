@@ -9,7 +9,7 @@ const Year = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=end_year')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person/getFieldData?field=end_year')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
