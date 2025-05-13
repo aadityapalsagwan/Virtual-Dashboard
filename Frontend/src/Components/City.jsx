@@ -98,7 +98,7 @@ const City = () => {
                             </button>
                         </div>
                     </div>
-                    <div className="overview-section p-4">
+                    <div className="overview-section p-4" style={{ overflowX: 'auto' }}>
                         <div className="chart-container mb-4">
                             <svg id="chart"></svg>
                         </div>
