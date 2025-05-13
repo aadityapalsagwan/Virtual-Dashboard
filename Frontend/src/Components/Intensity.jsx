@@ -9,7 +9,7 @@ const Intensity = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=intensity')
+        axios.get('https://virtual-dashboard-backend.onrender.com/getFieldData?field=intensity')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
