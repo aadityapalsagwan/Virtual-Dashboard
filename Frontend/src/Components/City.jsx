@@ -9,7 +9,7 @@ const City = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/fieldData?field=city')
+        axios.get('https://virtual-dashboard-backend.onrender.com//person/fieldData?field=city')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
