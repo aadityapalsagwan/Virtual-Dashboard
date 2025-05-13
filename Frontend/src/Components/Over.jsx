@@ -9,7 +9,7 @@ const Over = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
