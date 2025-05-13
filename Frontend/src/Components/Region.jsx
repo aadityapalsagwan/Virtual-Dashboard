@@ -9,7 +9,7 @@ const Region = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=region')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person/getFieldData?field=region')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
