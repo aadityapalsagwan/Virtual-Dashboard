@@ -9,7 +9,7 @@ const Topic = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/person/getFieldData?field=topic')
+        axios.get('https://virtual-dashboard-backend.onrender.com/person/getFieldData?field=topic')
             .then(response => {
                 setData(response.data);
                 setLoading(false);
